@@ -241,7 +241,22 @@ export function ProductDetails({
             </p>
           )}
 
-          <AddToCartButton disabled={!selectionComplete} />
+          <AddToCartButton
+            disabled={!selectionComplete}
+            cartUrl={
+              selectionComplete
+                ? `https://foxy-commerce-demo.foxycart.com/cart?` +
+                  new URLSearchParams({
+                    name: title ?? '',
+                    price: String(price?.amount ?? 0),
+                    quantity: '1',
+                    ...(selectedColorName ? {color: selectedColorName} : {}),
+                    ...(selectedSizeCode ? {size: selectedSizeCode} : {}),
+                    ...(selectedVariant?.sku ? {code: selectedVariant.sku} : {}),
+                  }).toString()
+                : null
+            }
+          />
         </div>
 
         {/* Features */}
