@@ -253,6 +253,7 @@ export function ProductDetails({
                     ...(selectedColorName ? {color: selectedColorName} : {}),
                     ...(selectedSizeCode ? {size: selectedSizeCode} : {}),
                     ...(selectedVariant?.sku ? {code: selectedVariant.sku} : {}),
+                    ...(currentImage?.asset?.url ? {image: currentImage.asset.url} : {}),
                   }).toString()
                 : null
             }
