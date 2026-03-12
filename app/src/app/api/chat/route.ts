@@ -11,7 +11,7 @@ import { client } from "@/sanity/lib/client";
 const contextSlug = process.env.SANITY_CONTEXT_SLUG || "default";
 const agentConfigSlug = process.env.SANITY_AGENT_CONFIG_SLUG || "default";
 // Claude model used for chat responses (https://docs.anthropic.com/en/docs/about-claude/models)
-const MODEL_ID = "claude-opus-4-5";
+const MODEL_ID = "claude-sonnet-4-6";
 // Maximum number of agentic steps (tool call rounds) before stopping
 const MAX_STEPS = 20;
 
