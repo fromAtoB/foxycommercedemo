@@ -2,6 +2,7 @@ import './globals.css'
 
 import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
+import Script from 'next/script'
 
 import {ChatButton} from '@/components/chat'
 import {Header} from '@/components/Header'
@@ -23,6 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          data-cfasync="false"
+          src="https://cdn.foxycart.com/foxy-commerce-demo/loader.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Header />
         {children}
