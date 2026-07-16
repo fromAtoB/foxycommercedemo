@@ -1,6 +1,9 @@
 # Content-Powered AI Shopping Assistant
 
+
 [![AI Shopping Assistant Preview](.github/sanity-agent-context-chat-preview.png)](https://ai-shopping-assistant.sanity.dev/)
+
+## demo only - playing with ai assembled product to cart links for kicks - not for real workd use (too inefficient)
 
 An ecommerce storefront with an AI shopping assistant that operates directly on your content. Built with Next.js 16, the Sanity Studio, and Claude, this starter uses [Context MCP](https://www.sanity.io/docs/ai/agent-context) to give the AI structured, schema-aware access to products in the Content Lake. The agent does not just search text; it understands your content model and reasons over it with GROQ queries.
 
