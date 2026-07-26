@@ -3,9 +3,9 @@
 
 [![AI Shopping Assistant Preview](.github/sanity-agent-context-chat-preview.png)](https://ai-shopping-assistant.sanity.dev/)
 
-## demo only - playing with ai assembled product to cart links for kicks - not for real workd use (too inefficient)
+## demo only - Playing with Foxy + Sanity CMS + Claude API to get ai assembled on-the-fly add to cart links for a chat powered webstore 
 
-An ecommerce storefront with an AI shopping assistant that operates directly on your content. Built with Next.js 16, the Sanity Studio, and Claude, this starter uses [Context MCP](https://www.sanity.io/docs/ai/agent-context) to give the AI structured, schema-aware access to products in the Content Lake. The agent does not just search text; it understands your content model and reasons over it with GROQ queries.
+Built with Next.js 16, Foxy Commerce, the Sanity Studio, and Claude, this starter uses [Context MCP](https://www.sanity.io/docs/ai/agent-context) to give the AI structured, schema-aware access to products in the Content Lake. The agent does not just search text; it understands your content model and reasons over it with GROQ queries.
 
 **[Live Demo](https://ai-shopping-assistant.sanity.dev/)**
 
